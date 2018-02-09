@@ -41,7 +41,7 @@ contract Faucet {
         Withdrawn(msg.sender, sendAmount, remainingBalance);
     }
     
-    //?????? problem
+    // The "money" parameter should be passed as a string: "10000000000000000000" (= 10 ether)
     function withDraw(uint money) public onlyOwner checkBalance(money) {
         //require(this.balance >= money);
         uint balanceBeforeTransfer = this.balance;
