@@ -1,0 +1,2 @@
+cd '../truffle'
+truffle develop

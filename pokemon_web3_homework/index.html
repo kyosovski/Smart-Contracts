@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Pokemon Contract</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<img id="loader" src="https://loading.io/spinners/double-ring/lg.double-ring-spinner.gif" style="display:none;">
+		<p id="message"></p>
+		<div id="initAddress" style="display:none;">
+			<p id="addressLabel">Enter contract address:</p>
+			<input type="text" id="inputAddress">
+			<input type="button" onclick="onInitButtonPressed()" value="OK">
+		</div>
+		<div id="container" style="display:none;">
+			<input type="text" id="input"><br><br>
+			<input type="button" onclick="onButtonPressed()" value="Submit"><br><br>
+			<input type="button" onclick="onSecondButtonPressed()" value="Read">
+		</div>
+	</body>
+</html>
